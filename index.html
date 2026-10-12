@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riya Fathima | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; padding-bottom: 50px; }
+    nav { position: sticky; top: 0; background: rgba(11, 17, 32, 0.95); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); z-index: 100; }
+    .logo { font-weight: 700; font-size: 1.2rem; color: var(--accent); }
+    .nav-links a { color: var(--text-muted); text-decoration: none; margin-left: 0.85rem; font-size: 0.8rem; }
+    .nav-links a:hover { color: var(--accent); }
+    .container { max-width: 800px; margin: 0 auto; padding: 1.5rem 1rem; }
+    .hero { text-align: center; padding: 2rem 0; }
+    .badge { display: inline-block; background: rgba(56, 189, 248, 0.15); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 1rem; border: 1px solid var(--accent); }
+    .hero h1 { font-size: 1.85rem; line-height: 1.25; margin-bottom: 0.75rem; }
+    .hero p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem; }
+    .btn-group { display: flex; justify-content: center; gap: 0.6rem; }
+    .btn { padding: 0.6rem 1rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+    .btn-primary { background: var(--accent); color: #0b1120; }
+    .btn-outline { border: 1px solid var(--border); color: var(--text-main); }
+    section { margin-top: 2.5rem; }
+    h2 { font-size: 1.3rem; margin-bottom: 1rem; color: #fff; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem; }
+    .card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: #fff; }
+    .card p { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.75rem; }
+    .tag-container { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .tag { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); color: var(--accent); font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 4px; }
+    .contact-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; text-align: center; }
+    .contact-card a { color: var(--accent); text-decoration: none; word-break: break-all; }
+    footer { text-align: center; margin-top: 3rem; color: var(--text-muted); font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">RF.</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <div class="badge">Portfolio</div>
+      <h1>Hi, I'm <span style="color: var(--accent);">Riya Fathima</span></h1>
+      <p>Computer Science & Engineering student building automated embedded IoT systems and software tools.</p>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary">Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I am a Computer Science student passionate about microcontroller prototyping, systems programming, and UI design. I enjoy creating practical systems that connect physical sensors to clean software logic.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages & Systems</h3>
+          <p>Core programming fundamentals and operating systems.</p>
+          <div class="tag-container">
+            <span class="tag">C</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Hardware & IoT</h3>
+          <p>Microcontrollers and sensor prototyping.</p>
+          <div class="tag-container">
+            <span class="tag">NodeMCU</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Relay Modules</span>
+            <span class="tag">Sensors</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Smart Soil Moisture Irrigation System</h3>
+          <p>Automated irrigation circuit built with NodeMCU, FC-28 soil sensor, and relay module delivering water based on real-time soil thresholds.</p>
+          <div class="tag-container">
+            <span class="tag">NodeMCU</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Embedded C</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>CPU Scheduling Simulator</h3>
+          <p>Algorithm visualizer analyzing process turnaround and waiting times across SJF and SRTF scheduling models.</p>
+          <div class="tag-container">
+            <span class="tag">C</span>
+            <span class="tag">OS Concepts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p style="color:#fff; margin-bottom: 0.4rem;">Get in touch</p>
+        <p>Email: <a href="mailto:riyafathima@example.com">riyafathima@example.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Riya Fathima. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
