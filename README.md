@@ -18,7 +18,7 @@
       --border: rgba(51, 65, 85, 0.6);
     }
 
-    * {
+  * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -394,8 +394,7 @@
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
     </header>
-
-    <!-- About Section -->
+<!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <div class="card">
@@ -404,8 +403,7 @@
         </p>
       </div>
     </section>
-
-    <!-- Technical Skills -->
+ <!-- Technical Skills -->
     <section id="skills">
       <h2>Technical Toolkit</h2>
       <div class="grid">
@@ -420,7 +418,7 @@
           </div>
         </div>
 
-        <div class="card">
+   <div class="card">
           <h3>Hardware & IoT</h3>
           <p>Sensor integration and microcontroller circuits.</p>
           <div class="tags">
@@ -431,7 +429,7 @@
           </div>
         </div>
 
-        <div class="card">
+   <div class="card">
           <h3>Web & Creative</h3>
           <p>Interface structuring and visual graphic workflows.</p>
           <div class="tags">
@@ -443,8 +441,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Projects -->
+ <!-- Projects -->
     <section id="projects">
       <h2>Featured Projects</h2>
       <div class="grid">
@@ -459,7 +456,7 @@
           </div>
         </div>
 
-        <div class="card">
+   <div class="card">
           <h3>CPU Scheduling Simulator</h3>
           <p>Algorithm implementations analyzing process turnaround and waiting metrics under SJF and SRTF scheduling architectures.</p>
           <div class="tags">
@@ -469,7 +466,7 @@
           </div>
         </div>
 
-        <div class="card">
+   <div class="card">
           <h3>Tech Summit Event Collateral</h3>
           <p>Visual branding identity, typography systems, and graphic promotional materials for collegiate tech events.</p>
           <div class="tags">
@@ -480,8 +477,7 @@
         </div>
       </div>
     </section>
-
-    <!-- Contact -->
+ <!-- Contact -->
     <section id="contact">
       <h2>Let's Connect</h2>
       <div class="contact-card">
@@ -491,7 +487,7 @@
       </div>
     </section>
 
-    <footer>
+   <footer>
       <p>© 2026 Riya Fathima. Built & published live on GitHub Pages.</p>
     </footer>
   </div>
